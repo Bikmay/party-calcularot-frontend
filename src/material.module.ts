@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import {
   MatButtonModule,
@@ -14,7 +15,8 @@ import {
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule
   ],
   exports: [
     MatButtonModule,

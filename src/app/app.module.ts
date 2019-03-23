@@ -16,6 +16,10 @@ import {RouterModule} from "@angular/router";
 import { MaterialModule } from '../material.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
+import { SliderComponent } from './main/slider/slider.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
 
 
 const routes =[
@@ -29,6 +33,7 @@ const routes =[
     AppComponent,
     MainComponent,
     RegistrationComponent,
+    SliderComponent,
 
 
   ],
@@ -44,7 +49,8 @@ const routes =[
     RouterModule.forRoot(routes),
     MaterialModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule
   ],
   exports: [
     MatButtonModule,
