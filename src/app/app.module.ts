@@ -12,20 +12,20 @@ import {FormsModule} from '@angular/forms';
 import { MatMenuModule} from '@angular/material/menu';
 import { MainComponent } from './main/main.component';
 import { RegistrationComponent } from './registration/registration.component';
-import {RouterModule} from "@angular/router";
+import {RouterModule, Router, Routes} from '@angular/router';
 import { MaterialModule } from '../material.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
-import { SliderComponent } from './main/slider/slider.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { HomeComponent } from './home/home.component';
 
 
 
 
-const routes =[
-  {path:'', component: MainComponent},
-  {path:'registration', component: RegistrationComponent}
-]
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'registration', component: RegistrationComponent}
+];
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ const routes =[
     AppComponent,
     MainComponent,
     RegistrationComponent,
-    SliderComponent,
+    HomeComponent
 
 
   ],
@@ -46,7 +46,7 @@ const routes =[
     MatCheckboxModule,
     FormsModule,
     MatMenuModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(appRoutes),
     MaterialModule,
     MatSidenavModule,
     MatIconModule,
