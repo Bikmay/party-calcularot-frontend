@@ -18,6 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { HomeComponent } from './home/home.component';
+import { SliderComponent } from './main/slider/slider.component';
 
 
 
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     AppComponent,
     MainComponent,
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    SliderComponent
 
 
   ],

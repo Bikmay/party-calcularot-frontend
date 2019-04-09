@@ -40,4 +40,9 @@ header {
   margin-right: 40px;
   margin-top: 10px;
 }
+.button-slider {
+  background-color: white;
+  border: none;
+  padding: 0;
+}
 /*# sourceMappingURL=main.component.css.map */
